@@ -1,0 +1,139 @@
+.bg-angle {
+	position: relative;
+	overflow: hidden;
+}
+
+.bg-angle::before, .bg-angle::after {
+	content: " ";
+	position: absolute;
+	border-style: solid;
+	z-index: 1;
+}
+
+.bg-angle::after {
+	left: 0;
+}
+
+.bg-angle-top::after, .bg-angle-top::before {
+	top: 0;
+}
+
+.bg-angle-bottom::after, .bg-angle-bottom::before {
+	bottom: 0;
+}
+
+.bg-angle-lg::before, .bg-angle-lg::after {
+	border-width: 0 0 600px 2450px;
+}
+
+.bg-angle-lg::before {
+	left: -70px;
+}
+
+.bg-angle-sm::before, .bg-angle-sm::after {
+	border-width: 0 0 300px 2450px;
+}
+
+.bg-angle-sm::before {
+	left: -150px;
+}
+
+.bg-angle-white::before {
+	border-color: transparent transparent rgba(255, 255, 255, 0.25) transparent;
+}
+
+.bg-angle-white::after {
+	border-color: transparent transparent #ffffff transparent;
+}
+
+.bg-angle-light::before {
+	border-color: transparent transparent rgba(246, 249, 252, 0.25) transparent;
+}
+
+.bg-angle-light::after {
+	border-color: transparent transparent #F6F9FC transparent;
+}
+
+.bg-angle-primary::before {
+	border-color: transparent transparent rgba(10, 37, 64, 0.25) transparent;
+}
+
+.bg-angle-primary::after {
+	border-color: transparent transparent #0A2540 transparent;
+}
+
+.btn {
+	border-radius: 50px !important;
+}
+
+.btn:hover, .btn:focus, .btn.focus {
+	box-shadow: none;
+}
+
+.btn:not(:disabled):not(.disabled):active, .btn:not(:disabled):not(.disabled).active {
+	box-shadow: none;
+}
+
+.btn:not(:disabled):not(.disabled):active:focus, .btn:not(:disabled):not(.disabled).active:focus {
+	box-shadow: none;
+}
+
+.btn-primary, .btn-secondary, .btn-success, .btn-danger, .btn-warning, .btn-info {
+	border: none;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary.focus {
+	background-color: rgba(10, 37, 64, 0.7) !important;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active {
+	background-color: rgba(10, 37, 64, 0.7) !important;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus {
+	background-color: rgba(10, 37, 64, 0.7) !important;
+}
+
+.btn-secondary:hover, .btn-secondary:focus, .btn-secondary.focus {
+	background-color: #0A2540;
+}
+
+.btn-secondary:not(:disabled):not(.disabled):active, .btn-secondary:not(:disabled):not(.disabled).active {
+	background-color: #0A2540;
+}
+
+.btn-secondary:not(:disabled):not(.disabled):active:focus, .btn-secondary:not(:disabled):not(.disabled).active:focus {
+	background-color: #0A2540;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active:focus,
+.btn-primary:not(:disabled):not(.disabled).active:focus,
+.show > .btn-primary.dropdown-toggle:focus {
+	box-shadow: none;
+}
+
+.btn-secondary-demo {
+	color: #F6F9FC;
+	border-radius: 50px !important;
+}
+
+.btn-third {
+	color: #0A2540;
+	background-color: #61D7FA;
+	border: none;
+}
+
+.btn-third:hover {
+	background-color: #F6F9FC;
+}
+
+.btn-third-fade {
+	color: #F6F9FC;
+	background-color: rgba(97, 215, 250, 0.5);
+	border: none;
+}
+
+.btn-third-fade:hover {
+	color: #F6F9FC;
+	background-color: #61D7FA;
+}
